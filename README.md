@@ -1,5 +1,8 @@
 # Purpose of this repository
 
+> TL;DR: This node does not change how images are generated. It only embeds CivitAI-compatible metadata into PNG files.
+> For the changes from the original repository, please see [this comparison](https://github.com/audioscavenger/save-image-extended-comfyui/compare/499a8d067ad241e60edad03083542e1dc70816ac).
+
 CivitAI actually has a feature that analyzes uploaded images and automatically fills in the small input fields for **positive prompt, negative prompt, steps, CFG, sampler, and seed**.
 
 However, its analysis functionality is rather limited, and as of August 1, 2026, it has the following issues:
