@@ -1,3 +1,31 @@
+# Purpose of this repository
+
+CivitAI actually has a feature that analyzes uploaded images and automatically fills in the small input fields for **positive prompt, negative prompt, steps, CFG, sampler, and seed**.
+
+However, its analysis functionality is rather limited, and as of August 1, 2026, it has the following issues:
+
+- It does not work with WebP (it appears to only work with PNG files).
+- It only analyzes workflows in a very minimal state using ComfyUI's standard nodes.  
+  (For example, simply connecting a standard CLIP Text Encode node to a multiline string node can prevent the analysis from working.)
+
+Therefore, this repository extends the `save_image_extended` node and adds the **"💾 Save Image Extended CivitAI"** node. This node "fakes" the PNG prompt metadata to match CivitAI's expected format, forcing CivitAI's automatic input feature to work when an image is uploaded.
+
+## How to use
+
+Using this node is extremely simple, although somewhat brute-force.
+
+First, set the output file extension to **PNG**.  
+(**You must use PNG. Nothing will happen with any other file format.**)
+
+Then, simply configure the new properties added at the bottom of the node with the values you want CivitAI to automatically fill in.
+
+---
+
+Based on:
+https://github.com/audioscavenger/save-image-extended-comfyui
+
+---
+
 # 💾 Save Image Extended for ComfyUI
 Save as JXL, AVIF, WebP, JPEG, JPEG2k, customize the folder, sub-folders, and filenames of your images!
 
