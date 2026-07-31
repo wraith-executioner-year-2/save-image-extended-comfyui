@@ -22,6 +22,8 @@ First, set the output file extension to **PNG**.
 
 Then, simply configure the new properties added at the bottom of the node with the values you want CivitAI to automatically fill in.
 
+![](https://i.ibb.co/B5YdW3TS/example.webp)
+
 ---
 
 Based on:
